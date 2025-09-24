@@ -1,0 +1,58 @@
+orca scales call list
+each scale is appended with the relative 
+to switch to the nest in the progam
+
+0 = reg
+1 = sharp
+2 = flat
+
+--
+
+major
+ 
+CDEFGAB.A0MIN
+GABCDE.E0MIN
+DEfGABf.B0MIN
+ABcDEfg.F1MIN
+EfgABcd.C1MIN
+BcdEfga.G1MIN
+fgaBcde.D1MIN
+FGAaCDE.D0MIN
+
+/
+
+cdFfgaC.A1MIN
+
+minor
+
+A minor
+ABCDEFG.C0MAJ
+
+B minor
+BcDEfGA.D0MAJ
+
+C minor
+CDdFGga.G1MAJ
+
+D minor
+DEFGAaC.F0MAJ
+
+E minor
+EfGABCD.G0MAJ
+
+G minor
+GAaCDdF.A1MAJ
+
+F# minor
+fgABcDE.A0MAJ
+
+C# minor
+cdEfgAB.E0MAJ
+
+G# minor
+gaBcdEf.B0MAJ
+
+E/ minor
+FGgaCcd.E1MAJ
+
+B/ minor

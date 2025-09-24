@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SPORE Setup</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> </head> -->
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css" type="text/css">
+
+</head>
+  <body>
+    <div class="logo"><img src="img/SPORE-White.png" style="width:15%"></div>
+    <div class="center">
+        <button type="button" id="scanButton" data-tooltip="Scan network for added or removed Spores"><i class="fas fa-broadcast-tower"></i>Scan for Changes</button>
+        <button type="button" id="checkFirmwareButton" data-tooltip="Compare Spore FW versions with firmware folder and update over wifi"><i class="fas fa-upload"></i>Update FW</button>
+        <button type="button" id="openMonitorButton" data-tooltip="View status of connected Spores"><i class="fas fa-th"></i>Spore Status</button>
+        <button type="button" id="sendIPButton"><i class="fas fa-map-marker-alt"></i>Send Server IP</button>
+        <button type="button" id="restartButton"><i class="fas fa-power-off"></i>Restart Devices</button>
+        <button type="button" id="configButton"><i class="fas fa-cogs"></i>Send Config</button>
+        <h2>Set Mode:</h2>
+        <button type="button" id="modeButton0">NORMAL</button>
+        <button type="button" id="modeButton1">TEST</button>
+        <button type="button" id="modeButton2">BLACKOUT</button>    <!-- actually setting sleep mode but for now this is just a blackout -->
+    </div>
+
+
+
+
+    <section style="position:fixed;bottom:10px;width:98%;left:50%;transform:translateX(-50%);">
+        <!--<p style="margin-bottom:2px">System Status:</p>-->
+        <p id="status-console"></p>
+    </section>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

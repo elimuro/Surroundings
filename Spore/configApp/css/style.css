@@ -1,0 +1,174 @@
+/*chromium selection error workaround */
+
+::selection {
+    /*background:rgba(255, 255, 125, 0.99);
+  color:#032764;*/
+    /* TODO: this is ugly change it */
+    background: rgba(254, 115, 106, 0.83);
+    color: #333333;
+}
+
+body {
+    /*    background-image: linear-gradient(to top left, #303030, #020202);*/
+    /*background-image: url("file:///img/Spore-BG.png");*/
+    background-color: black;
+    background-image: url("../img/Spore-BG.png");
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #b8b8b8;
+    font-family: 'Roboto Mono', monospace;
+}
+
+input,
+textarea {
+    color: #b8b8b8;
+    font-family: 'Roboto Mono', monospace;
+    /*    background-color: #222222;*/
+    /*    background-image: url("img/Spore-BG.png")*/
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    width: 25%;
+    height: 40px;
+    font-size: 0.8em;
+    margin: 1%;
+    /*margin-top: 75px;*/
+    border: none;
+    cursor: pointer;
+    color: #2d2d2d;
+    background-color: #ececec;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    /*    hover transitions*/
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+button:hover {
+    background-color: #0bcbee;
+    color: #fff;
+    /*    filter: hue-rotate(-720deg);
+    */
+    -webkit-filter: none;
+    filter: none;
+    /* -webkit-animation: hue 3s infinite;
+    animation: hue 3s infinite; */
+}
+
+@keyframes hue {
+    0% {
+        -webkit-filter: grayscale(0%) hue-rotate(0deg);
+    }
+    100% {
+        -webkit-filter: grayscale(0%) hue-rotate(360deg);
+    }
+}
+
+button:focus {
+  outline-color: rgba(254, 115, 106, 0.83);
+}
+
+#monitorRefreshButton {
+  position:absolute;
+  right: 8px;
+  top: 10px;
+  display:inline;
+}
+
+#status-console {
+    margin: 0;
+    padding: 3px;
+    height: 6em;
+    text-overflow: clip;
+    overflow-y: scroll;
+    1px solid rgba(100,100,100,0.3);
+}
+
+img {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+#spore-template {
+  display: none;
+}
+#spore-container {
+    margin: 10px;
+}
+.spore {
+  padding: 1px 0;
+  font-size: 0.5em;
+  display: inline-block;
+  width: 40px;  /* 96 */
+  height: 40px; /* 64 */
+  margin: 0;
+  /*background-color: rgb(200, 200, 200);*/
+  background-color: dimgrey;
+  outline: 1px dashed grey;
+}
+.address {
+  padding: 2px 0;
+  display: block;
+}
+.battery {
+  padding: 2px 0;
+  display: block;
+}
+.firmware {
+  padding: 2px 0;
+  display: block;
+}
+.connected {
+  /*background-color: rgba(254, 115, 106, 0.83);*/
+  background-color: honeydew;
+  outline: 1px solid grey;
+  cursor: pointer;
+  color: black;
+}
+.lowBatt {
+  outline: 2px solid crimson;
+}
+.focused {
+  outline: 2px solid white;
+  background-color: RGB(195, 225, 255);
+  animation: pulse 2.5s infinite;
+}
+@keyframes pulse {
+  20% {
+    background-color: RGB(195, 225, 255);
+  }
+  50% {
+    background-color: dodgerblue;
+  }
+  80% {
+    background-color: RGB(195, 225, 255);
+  }
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top:50px;
+}
+
+i {
+    margin-right: 10px;
+}
