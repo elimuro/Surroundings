@@ -2,7 +2,6 @@
 
 A multi-disciplinary creative technology project that combines **generative music composition**, **spatial light installations**, and **live coding** to create immersive audiovisual experiences.
 
-![Project Overview](avatar.png)
 
 ## Overview
 
